@@ -1,199 +1,163 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">EcomApp</a>
-
-    <!--Add here -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!--Add here -->
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('about') }}">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
-                    Products
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Product 1</a>
-                    <a class="dropdown-item" href="#">Product 2</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Another Product</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="jumbotron">
+  <div class="jumbotron">
     <h1 class="display-4">Simple. Elegant. Awesome.</h1>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. </p>
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. </p>
 
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </p>
-</div>
+  </div>
 
-<div class="row">
+  <div class="row">
     <div class="col">
-        <div class="card">
-            <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <img class="img-fluid rounded-circle mb-3"
-                    src="{{ url_for('static', filename='img/testimonials-1.jpg') }}" alt="">
-                <p class="card-text">Some quick example text to build on the card title</p>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <img class="img-fluid mb-3" src="{{ url_for('static', filename='img/testimonials-1.jpg') }}" alt="">
+          <p class="card-text">Some quick example text to build on the card title</p>
+          <a href="#" class="card-link">Another link</a>
         </div>
+      </div>
     </div>
     <div class="col">
-        <div class="card">
-            <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title</p>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <img class="img-fluid mb-3" src="{{ url_for('static', filename='img/testimonials-2.jpg') }}" alt="">
+          <p class="card-text">Some quick example text to build on the card title</p>
+          <a href="#" class="card-link">Another link</a>
         </div>
+      </div>
     </div>
     <div class="col">
-        <div class="card">
-            <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title</p>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <img class="img-fluid mb-3" src="{{ url_for('static', filename='img/testimonials-3.jpg') }}" alt="">
+          <p class="card-text">Some quick example text to build on the card title</p>
+          <a href="#" class="card-link">Another link</a>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="row mt-sm-4 mt-md-0">
+  <div class="row mt-sm-4 mt-md-0 p-4">
     <div class="col-sm-12 col-md-8 text-sm-center text-md-left">
-        <h3>An important heading</h3>
-        <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
+      <h3>An important heading</h3>
+      <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </div>
 
     <div class="col-sm-12 col-md-4">
-        <h3 class="mb-4">Secondary Menu</h3>
+      <h3 class="mb-4">Secondary Menu</h3>
 
-        <ul class="nav flex-column nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
+      <ul class="nav flex-column nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
     </div>
 
-</div>
+  </div>
 
-<!-- Testimonials -->
-<section class="testimonials text-center bg-light">
+  <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
     <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3"
-                        src="{{ url_for('static', filename='img/testimonials-1.jpg') }}" alt="">
-                    <h5>Margaret E.</h5>
-                    <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-                    <h5>Fred S.</h5>
-                    <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super
-                        nice
-                        landing pages."</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-                    <h5>Sarah W.</h5>
-                    <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"
-                    </p>
-                </div>
-            </div>
+      <h2 class="mb-5">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="{{ url_for('static', filename='img/testimonials-1.jpg') }}" alt="">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
         </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="{{ url_for('static', filename='img/testimonials-2.jpg') }}" alt="">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
+              landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="{{ url_for('static', filename='img/testimonials-3.jpg') }}" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
-            </div>
-            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fab fa-facebook fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-instagram fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+   <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
         </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-</footer>
+
+  </footer>
 
 
 </div>

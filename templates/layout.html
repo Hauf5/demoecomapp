@@ -10,21 +10,53 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
-  <!--<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <!--<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.0/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <!--<link href="css/landing-page.min.css" rel="stylesheet">-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-landing-page/5.0.6/css/landing-page.css" rel="stylesheet">
 
-  <title>EcomApp</title>
+  <title>Hello, world!</title>
 </head>
 
 <body>
 <div class="container p-4">
+  <!--Menu-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="{{ url_for('home')}}">CompanyName</a>
+
+    <!--Add here -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Add here -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about')}}">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Products
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{ url_for('productos1')}}">Product 1</a>
+            <a class="dropdown-item" href="#">Product 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Another Product</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 {% block content %}
 {% endblock %}
 </div>

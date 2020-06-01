@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row mt-sm-4 mt-md-0 p-4">
+    <div class="text-sm-center text-md-left">
+        <h3>Lista de Productos 1</h3>
+        <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</div>
+{% for producto in productos %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ producto.nombre }}</h5>
+                <h5 class="card-title">{{ producto.categoria }}</h5>
+                <img class="img-fluid mb-3" src="/static/products/{{ producto.imagen }}" alt="{{ producto.nombre }}" width="50%" height="50%">
+                <p class="card-text">{{ producto.precio }}</p>
+                <a href="#" class="card-link">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
